@@ -1,0 +1,71 @@
+public class Pessoa //criação da classe "Pessoa".
+{	
+	//Criação dos atributos da classe "Pessoa".
+	public string nome {get;set;} 
+	public int cpf {get;set;}
+	public int idade {get;set;}
+	public string endereco {get;set;}
+	
+	public Pessoa () //criação do construtor.
+	{	
+		//atribuindo "valores iniciais" aos atributos da clasee "Pessoa".
+		nome = ""; 
+		cpf = 0; 
+		idade = 0;
+		endereco = "";
+	}
+}
+
+public class Endereco //Criação da classe "Endereco".
+{
+	//Criação dos atributos da classe "Endereco".
+	public string rua {get;set;}
+	public string numero {get;set;}
+	public string cidade {get;set;}
+	public string estado {get;set;}
+	public string cep {get;set;}
+	
+	public Endereco ()
+	{
+		//atribuindo "valores iniciais" aos atributos da classe "Endereco".
+		rua = "";
+		numero = "";
+		cidade = "";
+		estado = "";
+		cep = "";
+	}
+}
+	
+public class Conta_Corrente //Criação da classe "Conta Corrente".
+{
+	//Criação dos atributos da classe "Conta Corrente".
+	public string nome {get;set;}
+	public int num_conta_cc {get;set;}
+	public double limite;
+	public double saldo_conta_cc {get;}
+	
+	public Conta_Corrente ()
+	{
+		//atribuindo "valores iniciais" aos atributos da classe "Conta Corrente".
+		nome = "";
+		num_conta_cc = 0;
+		limite = 0;
+		saldo_conta_cc = 0;
+	}
+}
+	
+public class Conta_Poupanca //Criação da classe "Conta Poupanca".
+{
+	//Criação dos atributos da classe "Conta Poupanca".
+	public string nome {get;set;}
+	public int num_conta_cp {get;set;}
+	public double saldo_conta_cp {get;}
+	
+	public Conta_Poupanca ()
+	{
+		//atribuindo "valores iniciais" aos atributos da classe "Conta Poupanca".
+		nome = "";
+		num_conta_cp = 0;
+		saldo_conta_cp = 0;	
+	}
+}

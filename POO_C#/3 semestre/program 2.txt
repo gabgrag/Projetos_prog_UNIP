@@ -1,0 +1,127 @@
+using System;
+
+public class Program
+{
+
+	public class Pessoa //criação da classe "Pessoa".
+	{
+		//Criação dos atributos da classe "Pessoa".
+		public string nome { get; set; }
+		public int cpf { get; set; }
+		public int idade { get; set; }
+		public string endereco { get; set; }
+
+		public Pessoa() //criação do construtor.
+		{
+			//atribuindo "valores iniciais" aos atributos da clasee "Pessoa".
+			nome = "";
+			cpf = 0;
+			idade = 0;
+			endereco = "";
+		}
+	}
+
+	public class Endereco //Criação da classe "Endereco".
+	{
+		//Criação dos atributos da classe "Endereco".
+		public string rua { get; set; }
+		public string numero { get; set; }
+		public string cidade { get; set; }
+		public string estado { get; set; }
+		public string cep { get; set; }
+
+		public Endereco()
+		{
+			//atribuindo "valores iniciais" aos atributos da classe "Endereco".
+			rua = "";
+			numero = "";
+			cidade = "";
+			estado = "";
+			cep = "";
+		}
+	}
+
+	public class Conta_Corrente //Criação da classe "Conta Corrente".
+	{
+		//Criação dos atributos da classe "Conta Corrente".
+		public string nome { get; set; }
+		public int num_conta_cc { get; set; }
+		public double limite;
+		public double saldo_conta_cc { get; }
+
+		public Conta_Corrente()
+		{
+			//atribuindo "valores iniciais" aos atributos da classe "Conta Corrente".
+			nome = "";
+			num_conta_cc = 0;
+			limite = 0;
+			saldo_conta_cc = 0;
+		}
+	}
+
+	public class Conta_Poupanca //Criação da classe "Conta Poupanca".
+	{
+		//Criação dos atributos da classe "Conta Poupanca".
+		public string nome { get; set; }
+		public int num_conta_cp { get; set; }
+		public double saldo_conta_cp { get; }
+
+		public Conta_Poupanca()
+		{
+			//atribuindo "valores iniciais" aos atributos da classe "Conta Poupanca".
+			nome = "";
+			num_conta_cp = 0;
+			saldo_conta_cp = 0;
+		}
+	}
+
+	public void deposito(double valor_deposito) //Criação para calcular o deposito na conta.
+	{
+		Console.WriteLine("Qual o valor para deposito? ");
+		valor_deposito = double.Parse(Console.ReadLine());
+
+		saldo_conta_cc = saldo_conta_cc + valor_deposito;
+	}
+
+	public void saque(double valor_saque) //Criação para calcular o saque na conta.
+	{
+		Console.WriteLine("Qual o valor para saque? ");
+		valor_saque = double.Parse(Console.ReadLine());
+
+		if (valor_saque <= limite) //operação somente é executada se a pessoa tiver limite disponivel.
+		{
+			saldo_conta_cc = saldo_conta_cc - valor_saque;
+		}
+		else
+		{
+			Console.WriteLine("Não foi possivel realizar esta operação."); //Exemplo de retorno caso a pessoa não tenho limite disponivel em sua conta. 
+		}
+	}
+
+	public void rendimento()
+	{
+		double valorInvestido = 0;
+		int contadorMes = 1;
+		int i = 1;
+
+		Console.WriteLine("Quanto irá investir? ");
+		valorInvestido = double.Parse(Console.ReadLine());
+		Console.WriteLine("Quantos meses irá deixar o seu dinheiro rendendo? ");
+		contadorMes = int.Parse(Console.ReadLine());
+
+		while (i <= contadorMes)
+		{
+			valorInvestido = valorInvestido + (valorInvestido * 0.005); //rendimento de 0.5% = 0.005
+
+			i++;
+		}
+		Console.WriteLine("Após " + contadorMes + " mês(es), o valor será de "
+		+ valorInvestido);
+
+	}
+	public static void Main()
+	{
+		Pessoa p1 = new Pessoa();
+		Console.WriteLine(p1.nome);
+	}
+}

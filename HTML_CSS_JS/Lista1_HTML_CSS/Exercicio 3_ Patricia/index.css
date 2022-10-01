@@ -1,0 +1,22 @@
+body {
+  font-family: Arial;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+div {
+  background: #ffffff;
+  padding: 0px 30px 0px 30px;
+  margin: 100px 600px 100px 100px;
+  border-radius: 4px;
+}
+.m1 {
+  margin-left: 30px;
+}
+
+.m2 {
+  margin-left: 30px;
+  margin-top: 60px;
+}

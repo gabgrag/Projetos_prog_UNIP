@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex01</title>
+    <style>
+        body
+        {
+            background-color: rgb(24, 26, 29);
+            color: rgb(150, 175, 175);
+            font: normal 25pt arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt("Qual o seu nome? ")
+        window.alert ("Seu nome tem " +nome.length + " Letras \n" + 
+        "Seu nome em maiusculo: " +nome.toUpperCase() + "\n" +
+        "Seu nome em minusculo: " +nome.toLowerCase())
+        window.alert("Vamos realizar uma soma. \n")
+        var n1 = Number(window.prompt("Digite o primeiro numero"))
+        var n2 = Number(window.prompt("Digite o segundo numero"))
+        window.alert("A soma de " +n1 + " +"  +n2 + " é = " +(n1+n2))
+    </script>
+</body>
+</html>

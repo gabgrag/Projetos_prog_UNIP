@@ -1,0 +1,14 @@
+public void saque (double valor_saque) //Criação para calcular o saque na conta.
+{
+    Console.WriteLine("Qual o valor para saque? ");
+    valor_saque = double.Parse(Console.ReadLine());
+    
+	if ( valor_saque <= limite ) //operação somente é executada se a pessoa tiver limite disponivel.
+	{
+		saldo_conta_cc = saldo_conta_cc - valor_saque;
+	} 
+	else
+	{
+		Console.WriteLine("Não foi possivel realizar esta operação."); //Exemplo de retorno caso a pessoa não tenho limite disponivel em sua conta. 
+	}
+}

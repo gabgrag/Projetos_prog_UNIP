@@ -1,0 +1,21 @@
+public void rendimento ()
+{
+	public double valorInvestido = 0;
+	public int contadorMes = 1;
+	public int i = 1;
+		
+	Console.WriteLine("Quanto irá investir? ");
+	valorInvestido = double.Parse(Console.ReadLine());
+	Console.WriteLine("Quantos meses irá deixar o seu dinheiro rendendo? ");
+	contadorMes = int.Parse(Console.ReadLine());
+
+	while (i <= contadorMes)
+{
+	valorInvestido = valorInvestido + (valorInvestido * 0.005); //rendimento de 0.5% = 0.005
+
+	i++;
+}
+		Console.WriteLine("Após " + contadorMes + " mês(es), o valor será de " 
+		+ valorInvestido);
+	}
+}

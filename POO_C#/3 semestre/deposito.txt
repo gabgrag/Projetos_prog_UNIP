@@ -1,0 +1,7 @@
+public void deposito (double valor_deposito) //Criação para calcular o deposito na conta.
+{  
+    Console.WriteLine("Qual o valor para deposito? ");
+    valor_deposito = double.Parse(Console.ReadLine());
+    
+	saldo_conta_cc = saldo_conta_cc + valor_deposito;
+}

@@ -1,0 +1,11 @@
+body {
+  margin: 30px;
+  font-family: Arial;
+}
+table, th, tr{
+  font-family: Arial;
+  font-size: 19px;
+  background: #ffffff;
+  margin: 200px;
+  column-width: 300px;
+}

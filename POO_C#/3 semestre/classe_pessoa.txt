@@ -1,0 +1,17 @@
+public class Pessoa //criação da classe "Pessoa".
+{	
+	//Criação dos atributos da classe "Pessoa".
+	public string nome {get;set;} 
+	public int cpf {get;set;}
+	public int idade {get;set;}
+	public string endereco {get;set;}
+	
+	public Pessoa () //criação do construtor.
+	{	
+		//atribuindo "valores iniciais" aos atributos da clasee "Pessoa".
+		nome = ""; 
+		cpf = 0; 
+		idade = 0;
+		endereco = "";
+	}
+}

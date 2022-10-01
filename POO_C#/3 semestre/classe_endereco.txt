@@ -1,0 +1,19 @@
+public class Endereco //Criação da classe "Endereco".
+{
+	//Criação dos atributos da classe "Endereco".
+	public string rua {get;set;}
+	public string numero {get;set;}
+	public string cidade {get;set;}
+	public string estado {get;set;}
+	public string cep {get;set;}
+	
+	public Endereco ()
+	{
+		//atribuindo "valores iniciais" aos atributos da classe "Endereco".
+		rua = "";
+		numero = "";
+		cidade = "";
+		estado = "";
+		cep = "";
+	}
+}

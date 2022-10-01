@@ -1,0 +1,15 @@
+public class Conta_Poupanca //Criação da classe "Conta Poupanca".
+{
+	//Criação dos atributos da classe "Conta Poupanca".
+	public string nome {get;set;}
+	public int num_conta_cp {get;set;}
+	public double saldo_conta_cp {get;}
+	
+	public Conta_Poupanca ()
+	{
+		//atribuindo "valores iniciais" aos atributos da classe "Conta Poupanca".
+		nome = "";
+		num_conta_cp = 0;
+		saldo_conta_cp = 0;	
+	}
+}
