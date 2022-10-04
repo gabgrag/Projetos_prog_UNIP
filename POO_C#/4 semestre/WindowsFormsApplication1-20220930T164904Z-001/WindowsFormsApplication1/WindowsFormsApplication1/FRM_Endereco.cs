@@ -52,7 +52,14 @@ namespace WindowsFormsApplication1
                 MessageBox.Show(" Endereco OK ");
             else
                 MessageBox.Show(" Endereco ERRO ");
+        }
         
+        private void BTN_Gravar_Click(object sender, EventArgs e)
+        {
+            end.rua = TXT_Rua.Text;
+            end.cep = Convert.ToInt16(TXT_CEP.Text);
+            CTR_Endereco CTR_Endereco = new CTR_Endereco();
+            end = CTR_Endereco.incluir(end);
         }
     }
 }
