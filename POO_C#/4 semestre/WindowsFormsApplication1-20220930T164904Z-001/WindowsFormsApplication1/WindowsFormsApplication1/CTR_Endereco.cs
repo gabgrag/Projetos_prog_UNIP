@@ -11,12 +11,18 @@ namespace WindowsFormsApplication1
         public void crud()
         {
         }
+        
         public int verifica_cep (Endereco end)
         {
             if (end.cep > 0)
                 return 0;
             else 
                 return 3;
+        }
+        
+        public Endereco incluir (Endereco Endereco)
+        {
+            //um dia
         }
     }
 }
